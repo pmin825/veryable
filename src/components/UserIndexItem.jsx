@@ -61,17 +61,31 @@ const UserIndexItem = ({ users, toggleActive, active }) => {
                   <p className="user-email">{user.email}</p>
                 </div>
               </div>
-              <svg
-                className="expand"
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 0 24 24"
-                width="24px"
-                fill="#7E7E7E"
-              >
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-              </svg>
+              {active === user.id ? (
+                <svg
+                  className="expand"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#000000"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z" />
+                </svg>
+              ) : (
+                <svg
+                  className="expand"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#7E7E7E"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                </svg>
+              )}
             </button>
             <div
               className="user-content"
