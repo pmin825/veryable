@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-bottom: 12px;
   position: relative;
+  
 }
 
 .user-card {
@@ -19,6 +20,7 @@
   align-items: center;
   cursor: pointer;
   position: relative;
+  min-width: 320px;
 }
 
 .user-info {
@@ -69,6 +71,7 @@
 .expand-details {
   display: flex;
   flex-direction: column;
+  min-width: 320px;
 }
 
 .expand-details div {
