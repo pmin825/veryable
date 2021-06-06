@@ -33,15 +33,17 @@ const UserIndex = () => {
 
   return (
     <div className="index-container">
-      <div className="navbar">
-        <div className="navbar-icon">
-          <img
-            className="group-icon"
-            src="./icons/group.svg"
-            alt="group-icon"
-          />
+      <div className="navbar-container">
+        <div className="navbar">
+          <div className="navbar-icon">
+            <img
+              className="group-icon"
+              src="./icons/group.svg"
+              alt="group-icon"
+            />
+          </div>
+          <p>USERS</p>
         </div>
-        <p>USERS</p>
       </div>
       <UserIndexItem
         users={users}

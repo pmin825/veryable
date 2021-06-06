@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  overflow-y: overlay;
+}
+
 body {
   background-color: whitesmoke;
 }
