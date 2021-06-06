@@ -1,0 +1,33 @@
+.navbar {
+  height: 64px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar p {
+  font-size: 18px;
+}
+
+.navbar-icon {
+  display: flex;
+}
+
+.left-icon {
+  z-index: 2;
+  position: relative;
+  left: 15px;
+  color: #2081c3;
+  font-size: 18px;
+}
+
+.right-icon {
+  z-index: 1;
+  fill: #2081c3;
+  font-size: 18px;
+}
+
+.index-container {
+  background-color: lightgray;
+}

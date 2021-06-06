@@ -1,0 +1,13 @@
+.user-index-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-card {
+  height: 80px;
+  margin: 12px;
+}
+
+.user-card p {
+  font-family: "" Open Sans ", sans-serif;";
+}
