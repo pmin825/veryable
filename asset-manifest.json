@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/veryable/static/css/main.6d9c9329.chunk.css",
+    "main.js": "/veryable/static/js/main.d6fb8bd9.chunk.js",
+    "main.js.map": "/veryable/static/js/main.d6fb8bd9.chunk.js.map",
+    "runtime-main.js": "/veryable/static/js/runtime-main.388d03c7.js",
+    "runtime-main.js.map": "/veryable/static/js/runtime-main.388d03c7.js.map",
+    "static/js/2.07b1bbd8.chunk.js": "/veryable/static/js/2.07b1bbd8.chunk.js",
+    "static/js/2.07b1bbd8.chunk.js.map": "/veryable/static/js/2.07b1bbd8.chunk.js.map",
+    "index.html": "/veryable/index.html",
+    "static/css/main.6d9c9329.chunk.css.map": "/veryable/static/css/main.6d9c9329.chunk.css.map",
+    "static/js/2.07b1bbd8.chunk.js.LICENSE.txt": "/veryable/static/js/2.07b1bbd8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.388d03c7.js",
+    "static/js/2.07b1bbd8.chunk.js",
+    "static/css/main.6d9c9329.chunk.css",
+    "static/js/main.d6fb8bd9.chunk.js"
+  ]
+}
