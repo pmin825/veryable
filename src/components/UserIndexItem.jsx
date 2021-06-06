@@ -29,7 +29,7 @@ const UserIndexItem = ({ users, toggleActive, active }) => {
         return (
           <div key={user.id} className="user-index-container">
             <button
-              onClick={(e) => toggleActive(e)}
+              onClick={(e) => toggleActive(e, user.id)}
               key={user.id}
               className="user-card"
             >
@@ -73,7 +73,10 @@ const UserIndexItem = ({ users, toggleActive, active }) => {
                 <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
               </svg>
             </button>
-            <div className="user-content" id={active ? "active" : null}>
+            <div
+              className="user-content"
+              id={active === user.id ? "active" : null}
+            >
               <div className="spacer-div"></div>
               <div className="expand-details">
                 <div>

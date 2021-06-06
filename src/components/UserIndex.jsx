@@ -5,7 +5,7 @@ import "./UserIndex.css";
 
 const UserIndex = () => {
   const [users, setUsers] = useState([]);
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(0);
 
   useEffect(() => {
     fetchUsers();
@@ -22,9 +22,9 @@ const UserIndex = () => {
     setUsers(data);
   };
 
-  const toggleActive = (e) => {
+  const toggleActive = (e, id) => {
     e.preventDefault();
-    setActive((prev) => !prev);
+    setActive(id);
   };
 
   return (
