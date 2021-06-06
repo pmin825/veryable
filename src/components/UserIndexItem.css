@@ -3,12 +3,10 @@
   flex-direction: column;
   margin-bottom: 12px;
   position: relative;
-  
 }
 
 .user-card {
   height: 80px;
-  /* margin-top: 16px; */
   margin-left: 12px;
   margin-right: 12px;
   background-color: white;
@@ -65,7 +63,7 @@
   position: absolute;
   top: 50%;
   right: 20px;
-  /* transform: translateY(-50%); */
+  transform: translateY(-50%);
 }
 
 .expand-details {
