@@ -1,15 +1,18 @@
 .user-index-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 12px;
 }
 
 .user-card {
   height: 80px;
-  margin: 12px;
+  /* margin-top: 16px; */
+  margin-left: 12px;
+  margin-right: 12px;
   background-color: white;
-  box-shadow: 1px 1px 2px 1px lightgray;
+  box-shadow: 0 4px 2px -2px lightgray;
   border: none;
-  border-radius: 2px;
+  border-radius: 2px 2px 0px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,4 +59,45 @@
 
 .expand {
   margin-right: 24px;
+}
+
+.expand-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.expand-details div {
+  margin-top: 12px;
+}
+
+.user-content {
+  height: 190px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background-color: white;
+  border-radius: 0px 0px 2px 2px;
+  box-shadow: 0 4px 2px -2px lightgray;
+  display: flex;
+}
+
+.detail-header {
+  font-size: 10px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.detail-item {
+  font-size: 10px;
+  color: #4a4a4a;
+}
+
+.spacer-div {
+  height: 48px;
+  width: 96px;
+  margin-left: 24px;
+}
+
+.spacer-div-two {
+  height: 24px;
+  width: 24px;
 }
