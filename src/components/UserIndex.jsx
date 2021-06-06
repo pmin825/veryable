@@ -25,8 +25,7 @@ const UserIndex = () => {
     <div className="index-container">
       <div className="navbar">
         <div className="navbar-icon">
-          <img className="left-icon" src="./icons/user.svg" alt="user-icon" />
-          <img className="right-icon" src="./icons/user.svg" alt="user-icon" />
+          <img className="group-icon" src="./icons/group.svg" alt="group-icon" />
         </div>
         <p>USERS</p>
       </div>

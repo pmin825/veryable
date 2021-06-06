@@ -6,8 +6,54 @@
 .user-card {
   height: 80px;
   margin: 12px;
+  background-color: white;
+  box-shadow: 1px 1px 2px 1px lightgray;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-info {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .user-card p {
-  font-family: "" Open Sans ", sans-serif;";
+  font-family: "Lato", sans-serif;
+  padding: 2px;
+}
+
+.user-name {
+  color: #4a4a4a;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.user-role {
+  color: #4a4a4a;
+  font-size: 10px;
+}
+
+.user-email {
+  font-size: 10px;
+  color: #7e7e7e;
+}
+
+.user-icon {
+  height: 48px;
+  width: 96px;
+}
+
+.icon-details {
+  display: flex;
+  align-items: center;
+}
+
+.expand {
+  margin-right: 24px;
 }
