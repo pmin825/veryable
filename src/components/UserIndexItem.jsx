@@ -2,7 +2,7 @@ import React from "react";
 
 import "./UserIndexItem.css";
 
-const UserIndexItem = ({ users }) => {
+const UserIndexItem = ({ users, toggleActive, active }) => {
   const generateTime = (timeInMS) => {
     let minutes = Math.floor((timeInMS / (1000 * 60)) % 60);
     let hours = Math.floor((timeInMS / (1000 * 60 * 60)) % 24) % 12;
@@ -27,8 +27,12 @@ const UserIndexItem = ({ users }) => {
     <div>
       {users.map((user) => {
         return (
-          <div className="user-index-container">
-            <button key={user.id} className="user-card">
+          <div key={user.id} className="user-index-container">
+            <button
+              onClick={(e) => toggleActive(e)}
+              key={user.id}
+              className="user-card"
+            >
               <div className="icon-details">
                 <svg
                   className="user-icon"
@@ -69,7 +73,7 @@ const UserIndexItem = ({ users }) => {
                 <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
               </svg>
             </button>
-            <div className="user-content">
+            <div className="user-content" id={active ? "active" : null}>
               <div className="spacer-div"></div>
               <div className="expand-details">
                 <div>

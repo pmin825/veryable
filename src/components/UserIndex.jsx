@@ -5,6 +5,7 @@ import "./UserIndex.css";
 
 const UserIndex = () => {
   const [users, setUsers] = useState([]);
+  const [active, setActive] = useState(false);
 
   useEffect(() => {
     fetchUsers();
@@ -21,15 +22,28 @@ const UserIndex = () => {
     setUsers(data);
   };
 
+  const toggleActive = (e) => {
+    e.preventDefault();
+    setActive((prev) => !prev);
+  };
+
   return (
     <div className="index-container">
       <div className="navbar">
         <div className="navbar-icon">
-          <img className="group-icon" src="./icons/group.svg" alt="group-icon" />
+          <img
+            className="group-icon"
+            src="./icons/group.svg"
+            alt="group-icon"
+          />
         </div>
         <p>USERS</p>
       </div>
-      <UserIndexItem users={users} />
+      <UserIndexItem
+        users={users}
+        toggleActive={toggleActive}
+        active={active}
+      />
     </div>
   );
 };
